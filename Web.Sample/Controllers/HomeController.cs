@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Collections.Generic;
 using System.Web.Mvc;
 using Web.Sample.Models;
 
@@ -28,8 +25,10 @@ namespace Web.Sample.Controllers
             {
                 return new List<PanelItem>
                     {
-                        new PanelItem {text = "Kendo Examples", imageUrl = Url.Content("~/Content/images/KendoNinja-16px.png"), items = KendoItems},
-                        new PanelItem {text = "Bootstrap Examples", imageUrl = Url.Content("~/Content/images/Bootstrap-16px.png")}
+                        new PanelItem {text = "Kendo", imageUrl = Url.Content("~/Content/images/KendoNinja-16px.png"), items = KendoItems},
+                        new PanelItem {text = "Bootstrap", imageUrl = Url.Content("~/Content/images/Bootstrap-16px.png"), items = BootstrapItems},
+                        new PanelItem {text = "Pine Notifications", imageUrl = Url.Content("~/Content/images/pnotify-16px.png"), items = PNotifyItems},
+                        new PanelItem {text = "Dropzone", imageUrl = Url.Content("~/Content/images/Dropzone-16px.png"), items = DropzoneItems}
                     };
             }
         }
@@ -40,10 +39,45 @@ namespace Web.Sample.Controllers
             {
                 return new List<PanelItem>
                     {
-                        new PanelItem {text = "Grid", url = Url.Action("Index", "KendoEx", null, "http")},
-                        new PanelItem {text = "ListItems", url = Url.Action("Index", "KendoEx")}
+                        new PanelItem {text = "Grid", url = Url.Action("Grid", "KendoEx")},
+                        new PanelItem {text = "ListItem", url = Url.Action("ListItem", "KendoEx")}
                     };
             }
-        } 
+        }
+
+        private List<PanelItem> BootstrapItems
+        {
+            get
+            {
+                return new List<PanelItem>
+                    {
+                        new PanelItem {text = "Buttons", url = Url.Action("Buttons", "BootstrapEx")},
+                        new PanelItem {text = "Collapsible", url = Url.Action("Collapsible", "BootstrapEx")}
+                    };
+            }
+        }
+
+        private List<PanelItem> PNotifyItems
+        {
+            get
+            {
+                return new List<PanelItem>
+                    {
+                        new PanelItem {text = "Static", url = Url.Action("Static", "PNotifyEx")},
+                        new PanelItem {text = "Dynamic", url = Url.Action("Dynamic", "PNotifyEx")}
+                    };
+            }
+        }
+
+        private List<PanelItem> DropzoneItems
+        {
+            get
+            {
+                return new List<PanelItem>
+                    {
+                        new PanelItem {text = "Dropzone", url = Url.Action("Dropzone", "DropzoneEx")}
+                    };
+            }
+        }
     }
 }

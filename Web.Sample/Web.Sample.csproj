@@ -128,8 +128,11 @@
     <Compile Include="App_Start\NotificationsConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\BootstrapExController.cs" />
+    <Compile Include="Controllers\DropzoneExController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\KendoExController.cs" />
+    <Compile Include="Controllers\PNotifyExController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -142,9 +145,13 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\images\Bootstrap-16px.png" />
+    <Content Include="Content\images\demo.png" />
+    <Content Include="Content\images\Dropzone-16px.png" />
     <Content Include="Content\images\glyphicons-halflings-white.png" />
     <Content Include="Content\images\glyphicons-halflings.png" />
     <Content Include="Content\images\KendoNinja-16px.png" />
+    <Content Include="Content\images\pnotify-16px.png" />
+    <Content Include="Content\images\Settings-32px.png" />
     <Content Include="Content\jquery.pnotify.css" />
     <Content Include="Content\jquery.pnotify.icons.css" />
     <Content Include="Content\kendo\2012.3.1114\Default\editor.png" />
@@ -220,6 +227,17 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\KendoEx\Index.cshtml" />
+    <Content Include="Views\KendoEx\Grid.cshtml" />
+    <Content Include="Views\KendoEx\ListItem.cshtml" />
+    <Content Include="Views\BootstrapEx\Index.cshtml" />
+    <Content Include="Views\PNotifyEx\Index.cshtml" />
+    <Content Include="Views\BootstrapEx\Buttons.cshtml" />
+    <Content Include="Views\BootstrapEx\Collapsible.cshtml" />
+    <Content Include="Views\PNotifyEx\Static.cshtml" />
+    <Content Include="Views\PNotifyEx\Dynamic.cshtml" />
+    <Content Include="Views\DropzoneEx\Index.cshtml" />
+    <Content Include="Views\DropzoneEx\Dropzone.cshtml" />
+    <Content Include="Views\Shared\_Header.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -243,7 +261,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerPort>59961</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:52563/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>

@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
-        <title>@ViewBag.Title</title>
+        <title>Sample Web App</title>
         
         <script type="text/javascript">
             var _rootUrl = "@Url.Content("~")";
@@ -22,12 +22,15 @@
         <link href="@Url.Content("~/Content/kendo/2012.3.1114/kendo.default.min.css")" rel="stylesheet" />
     </head>
     <body>
+        @Html.Partial("_Header")
         <div id="splitter">
             <div id="navigation">
                 <div id="menu"></div>
             </div>
-            <div id="content">
-                @RenderBody()
+            <div id="contentPane">
+                <div id="content">
+                    @RenderBody()
+                </div>
             </div>
         </div>
         <link href="@Url.Content("~/Content/biz/_Layout.css")" rel="stylesheet"/>
@@ -35,6 +38,8 @@
         <script>
             Layout.init();
             Layout.Navigation.init();
+
+            $("#splitter").data("kendoSplitter").collapse("#navigation");
         </script>
         @RenderSection("scripts", required: false)
     </body>

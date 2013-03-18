@@ -16,5 +16,14 @@ namespace Web.Sample.Controllers
             return View();
         }
 
+        public ActionResult Grid()
+        {
+            return View();
+        }
+
+        public ActionResult ListItem()
+        {
+            return View();
+        }
     }
 }

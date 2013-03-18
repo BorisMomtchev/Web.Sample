@@ -5,6 +5,10 @@
     background-color: #fff;
 }
 
+.clear {
+	clear: both;
+}
+
 /* Styles for basic forms
 -----------------------------------------------------------*/
 fieldset {
@@ -55,16 +59,48 @@ textarea {
     display: none;
 }
 
+/* Header style
+-----------------------------------------------------------*/
+
+#header {
+	height: 90px;
+}
+
+#logo, #appName {
+	width: 25%;
+	float: left;
+}
+
+#settings {
+	margin-right: 5px;
+	float: right;
+	text-align: right;
+}
+
+#settings #version {
+	padding-left: 5px;
+	color: lightsteelblue;
+	font-size: 10px;
+}
+
+#header #logo img {
+	height: 90px;
+	width: 125px;
+}
+
 /* Splitter style
 -----------------------------------------------------------*/
 
 #splitter {
-	border: none;
+	border-left: none;
+	border-bottom: none;
+	border-right: none;
+	height: 560px;
 }
 
-/* Navigation style
+/* Content style
 -----------------------------------------------------------*/
 
-#navigation {
-	height: 100%;
+#content {
+	padding-left: 12px;
 }
