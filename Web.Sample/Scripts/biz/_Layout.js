@@ -3,6 +3,7 @@ Layout.Navigation = {};
 
 Layout.init = function() {
     $("#splitter").kendoSplitter({
+        height: "800px",
         panes: [
             { size: "200px", collapsible: true },
             { resizable: false }
