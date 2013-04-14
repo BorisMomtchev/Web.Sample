@@ -192,7 +192,10 @@
     <Content Include="Content\kendo\2012.3.1114\textures\stripe6.png" />
     <Content Include="Global.asax" />
     <Content Include="Content\biz\_Layout.css" />
+    <Content Include="Scripts\biz\PNotify.Dynamic.js" />
+    <Content Include="Scripts\biz\PNotify.Index.js" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Scripts\biz\PNotify.Static.js" />
     <Content Include="Scripts\biz\_Layout.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

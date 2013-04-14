@@ -16,6 +16,7 @@ height: auto;
 /* Ensures notices are above everything */
 z-index: 9999;
 }
+
 /* Hides position: fixed from IE6 */
 html > body .ui-pnotify {
 position: fixed;
