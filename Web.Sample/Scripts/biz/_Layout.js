@@ -1,6 +1,8 @@
 ﻿var Layout = {};
 Layout.Navigation = {};
 
+console.log(document.styleSheets);
+
 Layout.init = function() {
     $("#splitter").kendoSplitter({
         height: "800px",
