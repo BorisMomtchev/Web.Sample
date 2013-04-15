@@ -154,9 +154,6 @@
     <Content Include="Content\images\KendoNinja-16px.png" />
     <Content Include="Content\images\pnotify-16px.png" />
     <Content Include="Content\images\Settings-32px.png" />
-    <Content Include="Content\img\glyphicons-halflings.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="Content\jquery.pnotify.css" />
     <Content Include="Content\jquery.pnotify.icons.css" />
     <Content Include="Content\kendo\2013.1.319\Default\editor.png" />

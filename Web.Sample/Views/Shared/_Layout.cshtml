@@ -16,7 +16,7 @@
         <script src="@Url.Content("~/Scripts/kendo/2013.1.319/kendo.web.min.js")" type="text/javascript"></script>
         <script src="@Url.Content("~/Scripts/Cookie.Style.js")" type="text/javascript"></script>
         
-        <link id="bootstrap" href="@Url.Content("~/Content/bootstrap.min.css")" rel="stylesheet" />
+        <link id="bootstrap" href="" rel="stylesheet" />
         <link href="@Url.Content("~/Content/jquery.pnotify.css")" rel="stylesheet" />
         <link href="@Url.Content("~/Content/kendo/2013.1.319/kendo.common.min.css")" rel="stylesheet" />
         <link href="@Url.Content("~/Content/kendo/2013.1.319/kendo.default.min.css")" rel="stylesheet" />
@@ -38,6 +38,9 @@
         <script>
             Layout.init();
             Layout.Navigation.init();
+
+            $.pnotify.defaults.nonblock = true;
+            $.pnotify.defaults.nonblock_opacity = .4
 
             $("#splitter").data("kendoSplitter").collapse("#navigation");
         </script>
