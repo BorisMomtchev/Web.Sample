@@ -52,7 +52,8 @@ namespace Web.Sample.Controllers
                 return new List<PanelItem>
                     {
                         new PanelItem {text = "Buttons", url = Url.Action("Buttons", "BootstrapEx")},
-                        new PanelItem {text = "Collapsible", url = Url.Action("Collapsible", "BootstrapEx")}
+                        new PanelItem {text = "Collapsible", url = Url.Action("Collapsible", "BootstrapEx")},
+                        new PanelItem {text = "Theme", url = Url.Action("Index", "BootstrapEx")}
                     };
             }
         }

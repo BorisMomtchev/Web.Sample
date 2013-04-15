@@ -51,7 +51,7 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\packages\Newtonsoft.Json.5.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -148,48 +148,59 @@
     <Content Include="Content\images\demo.png" />
     <Content Include="Content\images\Dropzone-16px.png" />
     <Content Include="Content\images\glyphicons-halflings-white.png" />
-    <Content Include="Content\images\glyphicons-halflings.png" />
+    <Content Include="Content\images\glyphicons-halflings.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\images\KendoNinja-16px.png" />
     <Content Include="Content\images\pnotify-16px.png" />
     <Content Include="Content\images\Settings-32px.png" />
+    <Content Include="Content\img\glyphicons-halflings.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\jquery.pnotify.css" />
     <Content Include="Content\jquery.pnotify.icons.css" />
-    <Content Include="Content\kendo\2012.3.1114\Default\editor.png" />
-    <Content Include="Content\kendo\2012.3.1114\Default\imagebrowser.png" />
-    <Content Include="Content\kendo\2012.3.1114\Default\loading-image.gif" />
-    <Content Include="Content\kendo\2012.3.1114\Default\loading.gif" />
-    <Content Include="Content\kendo\2012.3.1114\Default\slider-h.gif" />
-    <Content Include="Content\kendo\2012.3.1114\Default\slider-v.gif" />
-    <Content Include="Content\kendo\2012.3.1114\Default\sprite.png" />
-    <Content Include="Content\kendo\2012.3.1114\kendo.common.min.css" />
-    <Content Include="Content\kendo\2012.3.1114\kendo.default.min.css" />
-    <Content Include="Content\kendo\2012.3.1114\kendo.rtl.min.css" />
-    <Content Include="Content\kendo\2012.3.1114\textures\brushed-metal.png" />
-    <Content Include="Content\kendo\2012.3.1114\textures\dots1.png" />
-    <Content Include="Content\kendo\2012.3.1114\textures\dots10.png" />
-    <Content Include="Content\kendo\2012.3.1114\textures\dots11.png" />
-    <Content Include="Content\kendo\2012.3.1114\textures\dots12.png" />
-    <Content Include="Content\kendo\2012.3.1114\textures\dots13.png" />
-    <Content Include="Content\kendo\2012.3.1114\textures\dots2.png" />
-    <Content Include="Content\kendo\2012.3.1114\textures\dots3.png" />
-    <Content Include="Content\kendo\2012.3.1114\textures\dots4.png" />
-    <Content Include="Content\kendo\2012.3.1114\textures\dots5.png" />
-    <Content Include="Content\kendo\2012.3.1114\textures\dots6.png" />
-    <Content Include="Content\kendo\2012.3.1114\textures\dots7.png" />
-    <Content Include="Content\kendo\2012.3.1114\textures\dots8.png" />
-    <Content Include="Content\kendo\2012.3.1114\textures\dots9.png" />
-    <Content Include="Content\kendo\2012.3.1114\textures\glass-lighter.png" />
-    <Content Include="Content\kendo\2012.3.1114\textures\glass.png" />
-    <Content Include="Content\kendo\2012.3.1114\textures\highlight.png" />
-    <Content Include="Content\kendo\2012.3.1114\textures\leather1.png" />
-    <Content Include="Content\kendo\2012.3.1114\textures\leather2.png" />
-    <Content Include="Content\kendo\2012.3.1114\textures\noise.png" />
-    <Content Include="Content\kendo\2012.3.1114\textures\stripe1.png" />
-    <Content Include="Content\kendo\2012.3.1114\textures\stripe2.png" />
-    <Content Include="Content\kendo\2012.3.1114\textures\stripe3.png" />
-    <Content Include="Content\kendo\2012.3.1114\textures\stripe4.png" />
-    <Content Include="Content\kendo\2012.3.1114\textures\stripe5.png" />
-    <Content Include="Content\kendo\2012.3.1114\textures\stripe6.png" />
+    <Content Include="Content\kendo\2013.1.319\Default\editor.png" />
+    <Content Include="Content\kendo\2013.1.319\Default\imagebrowser.png" />
+    <Content Include="Content\kendo\2013.1.319\Default\loading-image.gif" />
+    <Content Include="Content\kendo\2013.1.319\Default\loading.gif" />
+    <Content Include="Content\kendo\2013.1.319\Default\slider-h.gif" />
+    <Content Include="Content\kendo\2013.1.319\Default\slider-v.gif" />
+    <Content Include="Content\kendo\2013.1.319\Default\sprite%402x.png" />
+    <Content Include="Content\kendo\2013.1.319\Default\sprite.png" />
+    <Content Include="Content\kendo\2013.1.319\kendo.common.min.css" />
+    <Content Include="Content\kendo\2013.1.319\kendo.default.min.css" />
+    <Content Include="Content\kendo\2013.1.319\kendo.rtl.min.css" />
+    <Content Include="Content\kendo\2013.1.319\textures\brushed-metal.png" />
+    <Content Include="Content\kendo\2013.1.319\textures\dots1.png" />
+    <Content Include="Content\kendo\2013.1.319\textures\dots10.png" />
+    <Content Include="Content\kendo\2013.1.319\textures\dots11.png" />
+    <Content Include="Content\kendo\2013.1.319\textures\dots12.png" />
+    <Content Include="Content\kendo\2013.1.319\textures\dots13.png" />
+    <Content Include="Content\kendo\2013.1.319\textures\dots2.png" />
+    <Content Include="Content\kendo\2013.1.319\textures\dots3.png" />
+    <Content Include="Content\kendo\2013.1.319\textures\dots4.png" />
+    <Content Include="Content\kendo\2013.1.319\textures\dots5.png" />
+    <Content Include="Content\kendo\2013.1.319\textures\dots6.png" />
+    <Content Include="Content\kendo\2013.1.319\textures\dots7.png" />
+    <Content Include="Content\kendo\2013.1.319\textures\dots8.png" />
+    <Content Include="Content\kendo\2013.1.319\textures\dots9.png" />
+    <Content Include="Content\kendo\2013.1.319\textures\glass-lighter.png" />
+    <Content Include="Content\kendo\2013.1.319\textures\glass.png" />
+    <Content Include="Content\kendo\2013.1.319\textures\highlight.png" />
+    <Content Include="Content\kendo\2013.1.319\textures\hsv-gradient.png" />
+    <Content Include="Content\kendo\2013.1.319\textures\hue.png" />
+    <Content Include="Content\kendo\2013.1.319\textures\leather1.png" />
+    <Content Include="Content\kendo\2013.1.319\textures\leather2.png" />
+    <Content Include="Content\kendo\2013.1.319\textures\noise.png" />
+    <Content Include="Content\kendo\2013.1.319\textures\stripe1.png" />
+    <Content Include="Content\kendo\2013.1.319\textures\stripe2.png" />
+    <Content Include="Content\kendo\2013.1.319\textures\stripe3.png" />
+    <Content Include="Content\kendo\2013.1.319\textures\stripe4.png" />
+    <Content Include="Content\kendo\2013.1.319\textures\stripe5.png" />
+    <Content Include="Content\kendo\2013.1.319\textures\stripe6.png" />
+    <Content Include="Content\kendo\2013.1.319\textures\transparency.png" />
+    <Content Include="Content\kendo\2013.1.319\textures\transtexture.png" />
+    <Content Include="Content\NewStyle.min.css" />
     <Content Include="Global.asax" />
     <Content Include="Content\biz\_Layout.css" />
     <Content Include="Scripts\biz\PNotify.Dynamic.js" />
@@ -202,6 +213,9 @@
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="Scripts\jquery-1.9.1.min.map" />
+    <Content Include="Scripts\jquery.pnotify.min.js.map">
+      <DependentUpon>jquery.pnotify.js</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery-migrate-1.1.1.js" />
     <Content Include="Scripts\jquery-migrate-1.1.1.min.js" />
@@ -213,8 +227,9 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\kendo\2012.3.1114\jquery.min.js" />
-    <Content Include="Scripts\kendo\2012.3.1114\kendo.web.min.js" />
+    <Content Include="Scripts\kendo\2013.1.319\jquery.min.js" />
+    <Content Include="Scripts\kendo\2013.1.319\kendo.core.min.js" />
+    <Content Include="Scripts\kendo\2013.1.319\kendo.web.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
@@ -241,6 +256,7 @@
     <Content Include="Views\DropzoneEx\Index.cshtml" />
     <Content Include="Views\DropzoneEx\Dropzone.cshtml" />
     <Content Include="Views\Shared\_Header.cshtml" />
+    <Content Include="Scripts\Cookie.Style.js" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -4,13 +4,17 @@
 
 <fieldset>
     <legend>Basic Notifications</legend>
-    <input id="btn_Simple" type="button" class="btn-warning" value="Simple Notification"/>
+    <input id="btn_Simple" type="button" class="btn btn-warning" value="Simple Notification"/>
 </fieldset>
 
-@section scripts
-{
     <script type="text/javascript" src="@Url.Content("~/Scripts/biz/PNotify.Static.js")"></script>
-    <script type="text/javascript">
-        PNotify.Static.init();
-    </script>
-}
+<script type="text/javascript">
+    PNotify.Static.init();
+</script>
+
+<style>
+    .ui-pnotify.stack-bar-top {
+			right: 0;
+			top: 0;
+		}
+</style>

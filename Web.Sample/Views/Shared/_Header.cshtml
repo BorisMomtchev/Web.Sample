@@ -9,8 +9,57 @@
             @ViewBag.Title
         </h2>
     </div>
-    <div id="settings">
-        <img src="@Url.Content("~/Content/images/Settings-32px.png")" alt="Manage Settings"/>
+    <div id="settings" class="dropdown">
+        <a id="gear" class="dropdown-toggle" data-toggle="dropdown" href="">
+            <img src="@Url.Content("~/Content/images/Settings-32px.png")" alt="Manage Settings"/>
+        </a>
+        <ul id="mnu_Settings" class="dropdown-menu" style="top: 32px; float: right; position: inherit;">
+            <li class="dropdown-submenu pull-left"><a href="">Styles</a>
+                <ul class="dropdown-menu">
+                    <li id="sty_Default"><a class="theme" href="">Default</a></li>
+                    <li id="sty_New"><a class="theme" href="">New</a></li>
+                </ul>
+            </li>
+        </ul>
     </div>
 </div>
-<div class="clear" />
+<div class="clear"></div>
+
+<script>
+    var settings = false;
+    
+    $(".theme").on("mouseover", function (event) {
+        var theme = event.currentTarget.innerText;
+        var e = document.getElementById('bootstrap');
+        
+        switch (theme) {
+            case "New":
+                e.href = _rootUrl + "Content/NewStyle.min.css";
+                break;
+            default:
+                e.href = _rootUrl + "Content/bootstrap.min.css";
+                break;
+        }
+    });
+
+    $(".theme").on("click", function(event) {
+        var theme = event.currentTarget.innerText;
+        var value;
+
+        StyleCookie.eraseCookie("theme");
+        switch (theme) {
+        case "New":
+            value = _rootUrl + "Content/NewStyle.min.css";
+            break;
+        default:
+            value = _rootUrl + "Content/bootstrap.min.css";
+            break;
+        }
+
+        StyleCookie.createCookie("theme", value, 365);
+    });
+</script>
+
+<style>
+    .theme {}
+</style>
