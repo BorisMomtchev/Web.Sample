@@ -1,49 +1,70 @@
 ﻿<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width" />
-        <title>Sample Web App</title>
-        
-        <script type="text/javascript">
-            var _rootUrl = "@Url.Content("~")";
-        </script>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Sample Web App</title>
 
-        <script src="@Url.Content("~/Scripts/jquery-1.9.1.min.js")" type="text/javascript"></script>
-        <script src="@Url.Content("~/Scripts/jquery-migrate-1.1.1.min.js")" type="text/javascript"></script>
-        <script src="@Url.Content("~/Scripts/bootstrap.min.js")" type="text/javascript"></script>
-        <script src="@Url.Content("~/Scripts/jquery.pnotify.min.js")" type="text/javascript"></script>
-        <script src="@Url.Content("~/Scripts/kendo/2013.1.319/kendo.web.min.js")" type="text/javascript"></script>
-        <script src="@Url.Content("~/Scripts/Cookie.Style.js")" type="text/javascript"></script>
-        
-        <link id="bootstrap" href="" rel="stylesheet" />
-        <link href="@Url.Content("~/Content/jquery.pnotify.css")" rel="stylesheet" />
-        <link href="@Url.Content("~/Content/kendo/2013.1.319/kendo.common.min.css")" rel="stylesheet" />
-        <link href="@Url.Content("~/Content/kendo/2013.1.319/kendo.default.min.css")" rel="stylesheet" />
-    </head>
-    <body>
-        @Html.Partial("_Header")
-        <div id="splitter" style="height: 100%">
-            <div id="navigation">
-                <div id="menu"></div>
-            </div>
-            <div id="contentPane">
-                <div id="content">
-                    @RenderBody()
-                </div>
+    <script type="text/javascript">
+        var _rootUrl = "@Url.Content("~")";
+    </script>
+
+    <script src="@Url.Content("~/Scripts/jquery-1.9.1.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery-migrate-1.1.1.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/bootstrap.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.pnotify.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/kendo/2013.1.319/kendo.web.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/Cookie.Style.js")" type="text/javascript"></script>
+
+    <link id="bootstrap" href="" rel="stylesheet" />
+    <link href="@Url.Content("~/Content/font-awesome.min.css")" rel="stylesheet"/>
+    <link href="@Url.Content("~/Content/jquery.pnotify.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Content/kendo/2013.1.319/kendo.common.min.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Content/kendo/2013.1.319/kendo.default.min.css")" rel="stylesheet" />
+
+    <script type="text/javascript"
+        src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+
+    <style>
+     .chromeFrameInstallDefaultStyle {
+       border: 5px solid #6699cc;
+     }
+    </style>
+</head>
+<body>
+    @Html.Partial("_Header")
+    <div id="splitter" style="height: 100%">
+        <div id="navigation">
+            <div id="menu"></div>
+        </div>
+        <div id="contentPane">
+            <div id="content">
+                @RenderBody()
             </div>
         </div>
-        <link href="@Url.Content("~/Content/biz/_Layout.css")" rel="stylesheet"/>
-        <script type="text/javascript" src="@Url.Content("~/Scripts/biz/_Layout.js")"></script>
-        <script>
-            Layout.init();
-            Layout.Navigation.init();
+    </div>
+    
+    <div id="prompt">
+        <!-- if IE without GCF, prompt goes here -->
+    </div>
+    <link href="@Url.Content("~/Content/biz/_Layout.css")" rel="stylesheet"/>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/biz/_Layout.js")"></script>
+    <script>
+        Layout.init();
+        Layout.Navigation.init();
 
-            $.pnotify.defaults.nonblock = true;
-            $.pnotify.defaults.nonblock_opacity = .4
+        $.pnotify.defaults.nonblock = true;
+        $.pnotify.defaults.nonblock_opacity = .4;
+        window.attachEvent("onload", function() {
+            CFInstall.check({
+                mode: "inline",
+                node: "prompt"
+            });
+        });
 
-            $("#splitter").data("kendoSplitter").collapse("#navigation");
-        </script>
-        @RenderSection("scripts", required: false)
-    </body>
+        $("#splitter").data("kendoSplitter").collapse("#navigation");
+    </script>
+    @RenderSection("scripts", required: false)
+</body>
 </html>

@@ -20,6 +20,10 @@ StyleCookie.readCookie = function(name) {
         while (c.charAt(0) == ' ') c = c.substring(1, c.length);
         if (c.indexOf(nameEq) == 0) return c.substring(nameEq.length, c.length);
     }
+
+    //If the cookie doesn't exist use Bootstrap default.
+    document.getElementById('bootstrap').href = _rootUrl + "Content/bootstrap.min.css";
+
     return null;
 };
 
