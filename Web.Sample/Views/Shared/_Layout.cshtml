@@ -57,8 +57,8 @@
         $.pnotify.defaults.nonblock = true;
         $.pnotify.defaults.nonblock_opacity = .4;
         window.attachEvent("onload", function() {
-            CFInstall.check({
-                mode: "inline",
+            window.CFInstall.check({
+                mode: "overlay",
                 node: "prompt"
             });
         });
